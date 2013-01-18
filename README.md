@@ -15,3 +15,14 @@ Custom buildpack
 The key thing you need to do is change BUILDPACK_URL to your own fork of the [heroku-buildpack-php](https://github.com/heroku/heroku-buildpack-php)
 
 	$ heroku config:set BUILDPACK_URL=git://github.com/winglian/heroku-buildpack-php.git#mpm-event-php-fpm
+
+
+Deploying
+
+To use this buildpack, on a new Heroku app:
+
+heroku create -s cedar -b git://github.com/iphoting/heroku-buildpack-php-tyler.git
+On an existing app:
+
+heroku config:add BUILDPACK_URL=git://github.com/iphoting/heroku-buildpack-php-tyler.git
+heroku config:add PATH="/app/vendor/bin:/app/local/bin:/app/vendor/nginx/sbin:/app/vendor/php/bin:/app/vendor/php/sbin:/usr/local/bin:/usr/bin:/bin"

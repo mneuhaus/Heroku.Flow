@@ -1,1 +1,1 @@
-ls -la
+echo "Run a shell script"

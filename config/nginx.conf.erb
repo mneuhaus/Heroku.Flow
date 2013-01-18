@@ -28,8 +28,12 @@ http {
     listen            <%= ENV['PORT'] %>;
     server_name       _;
 
-    root              /app;
+    root              /app/Web;
     index             index.php index.html index.htm;
+
+	# Adding error logs
+	error_log /app/error.log
+	access_log /app/access.log
 
     # Some basic cache-control for static files to be sent to the browser
     location ~* \.(?:ico|css|js|gif|jpeg|jpg|png)$ {

@@ -57,8 +57,9 @@ Please contact me via twitter [@van2parijs](https://twitter.com/van2parijs)
 Resources
 ---------
 
-[Blog post of original package](http://blog.iphoting.com/blog/2012/05/24/running-php-on-heroku/)
-[Hacking a buildpack](https://blog.heroku.com/archives/2012/11/13/hacking-buildpacks/)
+- [Blog post of original package](http://blog.iphoting.com/blog/2012/05/24/running-php-on-heroku/)
+
+- [Hacking a buildpack](https://blog.heroku.com/archives/2012/11/13/hacking-buildpacks/)
 
 Credits
 -------
